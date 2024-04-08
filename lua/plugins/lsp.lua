@@ -10,6 +10,7 @@ return {
 				"css-lsp",
 				"angular-language-server",
 				"intelephense",
+				"emmet-ls",
 			})
 		end,
 	},
@@ -21,6 +22,7 @@ return {
 			inlay_hints = { enabled = false },
 			---@type lspconfig.options
 			servers = {
+				emmet_ls = {},
 				cssls = {},
 				tailwindcss = {
 					root_dir = function(...)
