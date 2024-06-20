@@ -91,7 +91,7 @@ end
 
 keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
     { desc = "Open harpoon window" })
-keymap.set("n", "<leader>a", function() harpoon:list():append() end)
+keymap.set("n", "<leader>a", function() harpoon:list():add() end)
 keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
 keymap.set("n", "<C-b>", function() harpoon:list():select(1) end)
