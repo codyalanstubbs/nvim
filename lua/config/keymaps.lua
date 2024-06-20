@@ -1,7 +1,3 @@
-local discipline = require("codyalanstubbs.discipline")
-
-discipline.cowboy()
-
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
