@@ -22,7 +22,7 @@ return {
         dap.adapters.php = {
           type = 'executable',
           command = 'node',
-          args = { '/path/to/vscode-php-debug/out/phpDebug.js' }
+          args = { '~/dotfiles-public/vscode-php-debug/out/phpDebug.js' }
         }
         dap.listeners.after.event_initialized["dapui_config"] = function()
           dapui.open({})
@@ -47,8 +47,8 @@ return {
       "folke/which-key.nvim",
       optional = true,
       opts = {
-        defaults = {
-          ["<leader>d"] = { name = "+debug" },
+        spec = {
+          -- { "<leader>d", group = "debug" },
         },
       },
     },
